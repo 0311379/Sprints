@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>opdracht 4</title>
+</head>
+<body>
+   
+    <script>
+        
+        var vraag = 'Hoeveel is 20 + 60 ?'; 
+
+        var randomnumber = (Math.random() * 11);
+        
+       var response =  prompt("kies een nummer onder de 10", "antwoord");
+
+      
+       if (response > 10 &&  response !== randomnumber){
+           
+           output = ("<h2> nummer hoger dan 10. </h2>");
+       }
+           else if (response < 10 && response !== randomnumber){
+            document.write("<h1>De random nummer:<h1> " + randomnumber.toFixed(0));
+            output = ("<h2> Je nummer:</h2>" + "<h2>"+response+"</h2>");
+           }
+
+        else if (response < 10 && response == randomnumber){
+            document.write("<h1>De random nummer:<h1> " + randomnumber.toFixed(0));
+            document.write("<h2>De random nummer en je nummer zijn gelijk!</h2>")
+            output = ("<h2> Je nummer:</h2>" + "<h2>"+response+"</h2>");
+
+        }
+       document.write(output);
+        </script>
+        
+    
+
+
+
+</body>
+</html>
