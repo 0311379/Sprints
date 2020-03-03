@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>LAB04</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        var palet = ["blue", "red", "green", "white", "violet" ]
+        document.write("Palet is nu: "+palet)
+        var nieuwekleur = prompt('Typ een nieuwe kleur in: ');
+        palet.push(nieuwekleur);
+        document.write("<br>Palet is nu: "+palet);
+        var nieuwekleurr = prompt("Typ een nieuwe kleur in:  ")
+        palet.unshift(nieuwekleurr);
+        document.write("<br>Palet is nu: "+palet);
+        palet.sort();
+        document.write("<br>Palet is nu: " + palet);
+        var palet2 = [palet[0], palet[1], palet[2]]
+        palet = [palet[3], palet[4], palet[5]]
+        document.write("<br>Palet is nu: "+palet);
+        document.write("<br>Palet2 is nu: "+palet2);
+        var palet3 = palet;
+        document.write("<br>Palet3 is nu: "+palet3);
+        
+
+
+    </script>
+</body>
+</html>
