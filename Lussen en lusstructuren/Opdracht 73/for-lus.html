@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>de for-lus</title>
+</head>
+<body>
+    <script>
+
+        for (x = 0 ; x < 3; x++){
+            document.write("<br>Dit is lus: " + x)
+        }
+        var student = new Array(
+            'Zakaria','Albert','Hamsa','Mike','Pieter','Harry'
+        )
+        for (x=0; x < student.length; x++){
+            if ( student[x] % 2 == 0){
+            document.write('<br>Element '+x+' is '+student[x]);
+            }
+        
+        }
+        var tekst = "Hij lijkt een beetje op Nelson Mandela.";
+        lengte = tekst.length;
+        spaties = 0;
+        document.write("<br>");
+        for (x = 0; x < lengte; x++){
+            teken = tekst.charAt(x);
+            document.write(teken);
+            if (teken  == " "){
+                spaties++;
+            }
+        }
+        document.write("<br>Tekst bevat " +spaties+" spaties<br>");
+        aa = 0
+        ee = 0
+        ii = 0
+        oo = 0
+        uu = 0
+        document.write("<br>")
+        for (x = 0; x < lengte ; x++){
+           a = tekst.charAt(x) 
+           document.write(teken)
+           if(teken == "a"){
+            aa++
+           }
+          
+          
+        }
+        for (v = 0; v < lengte ; v++){
+           e = tekst.charAt(v) 
+           document.write(teken)
+           if(teken == "e"){
+            ee++
+           }
+          
+          
+        }
+        for (z = 0; z < lengte ; z++){
+           i = tekst.charAt(z) 
+           document.write(teken)
+           if(teken == "e"){
+            ee++
+           }
+          
+          
+        }
+        for (c = 0; c < lengte ; c++){
+           o = tekst.charAt(c) 
+           document.write(teken)
+           if(teken == "o"){
+            oo++
+           }
+          
+          
+        }
+        for (b = 0; b < lengte ; b++){
+           u = tekst.charAt(b) 
+           document.write(teken)
+           if(teken == "u"){
+            uu++
+           }
+          
+          
+        }
+        
+
+          
+        document.write("<br>aantal a's: "+aa)
+        document.write("<br>aantal e's: "+ee)
+        document.write("<br>aantal i's: "+ii)
+        document.write("<br>aantal o's: "+oo)
+        document.write("<br>aantal u's: "+uu)
+
+
+       
+
+    </script>
+
+
+
+</body>
+</html>
