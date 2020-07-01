@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab15</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Woord</label>
+            <input>
+        </div>
+        <div>
+            <label>Nieuwwoord</label>
+            <input>
+        </div>
+        <button>Submit</button>
+    </form>
+
+
+    <script>
+
+        tekst = 'Dit document is een lang document maar ook een simpel doment';
+        woord = prompt('woord')
+        nieuwewoord = prompt('nieuwewoord')
+        splitsing = tekst.split(' ');
+        function vervangen(tekst,woord,nieuwewoord){
+            for (i=0;i<splitsing.length;i++)
+            {
+                if (woord == splitsing[i]){
+                    splitsing[i] = nieuwewoord
+
+                }
+            }
+        }
+        output = splitsing.join(' ');
+        document.write(output);
+    </script>
+</body>
+</html>

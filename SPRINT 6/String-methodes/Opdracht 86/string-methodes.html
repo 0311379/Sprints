@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string-methodes</title>
+</head>
+<body>
+    <script>
+        var titel = 'javascript';
+        document.write('<br>Index van letter is: '+
+        titel.indexOf('s'));
+        var string = 
+        'dit is een lange tekst met daarin het woord javascript'
+        if(navigator.UserAgen.indexOf('MSIE')!= -1){
+            document.write('<br>Browser is internet explorer');
+        } else if ( navigator.userAgent.indexOf('Firefox', 0)!= -1){
+            document.write('<br>browser is firefox');
+        } else if (navigator.userAgent.indexOf('Chrome') != -1){
+            document.write('<br>Browser is google chrome');
+        }
+
+    </script>
+</body>
+</html>
